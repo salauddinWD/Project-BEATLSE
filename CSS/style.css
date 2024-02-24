@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.common_heading .heading{
+width: fit-content;
+margin: 0 auto;
+position: relative;
+}
+
+.common_heading .heading h2{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.common_heading .heading img{
+    width: 60px;
+    position: absolute;
+    top: 100%;
+    left:0%;
+}
+
+/* 
+========================================================
+ommon css part End
+======================================================== */
+
+
+/* 
+========================================================
+header part start
+======================================================== */
+
+#header {
+    height: 32px;
+    width: 100%;
+    background-color: #0066cc;
+}
+
+.header_row {
+    line-height: 32px;
+}
+
+.header_row .text_col {
+    width: 50%;
+    float: left;
+}
+
+.header_row .text_col p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #e7e7e7;
+}
+
+.header_row .text_icon {
+    float: left;
+    width: 50%;
+}
+
+.header_row .text_icon ul {
+    float: right;
+}
+
+.header_row .text_icon ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+.header_row .text_icon ul li a {
+    color: #e7e7e7;
+    transition: all linear .3s;
+}
+
+.header_row .text_icon ul li a:hover {
+    color: #333333;
+}
+
+
+/* <!-- ========================================================
+header part End
+======================================================== --> */
+
+
+/*========================================================
+NAV part Start
+======================================================== */
+
+#menu {
+    height: 87px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#menu .menu_row {
+    line-height: 87px;
+}
+
+.menu_row .menu_logo {
+    width: 30%;
+    float: left;
+}
+
+.menu_row .menu_logo img {
+    width: 80px;
+    height: 40px;
+}
+
+.menu_row .menu_tag {
+    width: 70%;
+    float: left;
+}
+
+.menu_row .menu_tag ul {
+    float: right;
+}
+
+.menu_row .menu_tag ul li {
+    float: left;
+}
+
+.menu_row .menu_tag ul li a {
+    color: #333333;
+    margin-left: 15px;
+    font-size: 14pt;
+    font-weight: 400;
+    transition: all linear .3s;
+}
+
+.menu_row .menu_tag ul li a:hover {
+    color: #0066cc;
+}
+
+
+/* ========================================================
+NAV part End
+========================================================  */
+
+
+/*========================================================
+bannerpart Start
+======================================================== */
+
+#banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner .banner_text {
+    float: right;
+    text-align: right;
+    margin-top: 76px;
+}
+
+#banner .banner_text h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+#banner .banner_text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+#banner .banner_text p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    width: 440px;
+    line-height: 24px;
+    margin-top: 17px;
+}
+
+.banner_button a{
+    width: 82px;
+    height: 31px;
+    border: 1px solid #ffffff;
+    line-height: 29px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    transition: all linear .3s;
+    margin: 27px 0 0 15px;
+}
+.banner_button a:hover{
+    background-color: #0872b9;
+    border-color: #0872b9;
+}
+
+
+/* <!-- ========================================================
+banner part End
+======================================================== --> */
+
+/* <!-- ========================================================
+About part Start
+======================================================== --> */
+#about{
+    padding: 60px 0;
+}
+.about_row{
+    margin-top: 40px;
+}
+.about_row .photo_col{
+    width: 380px;
+    float: left;
+    margin-right: 22px;
+}
+
+.about_row .text_col{
+    width: 540px;
+    float: left;
+}
+
+.about_row .text_col p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+    line-height: 24px;
+    margin-top: 38px;
+}
+.about_row .text_col p span{
+    display: block;
+    margin-top: 28px;
+}
+/* <!-- ========================================================
+About part End
+======================================================== --> */
+
+/*========================================================
+OUR SERVICE part Start
+======================================================== */
+#service{
+    padding-bottom: 60px;
+}
+
+#service .service_row{
+    margin-top: 68px;
+}
+   
+#service .service_row .service_col{
+    width: 306px;
+    height: 166px;
+    background-color: #f1f1f1;
+    float: left;
+    text-align: center;
+    padding: 44px 15px 15px 15px;
+    position: relative;
+    margin-right: 20px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+#service .service_row .service_col h2{
+font-size: 16px;
+font-weight: 500;
+font-family: 'Oswald', sans-serif;
+color: #353535;
+}
+
+#service .service_row .service_col p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    margin-top: 8px;
+
+}
+
+.service_col .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(255, 255, 255);
+    transition: all linear .3s;
+}
+.service_col .icon .img{
+    width: 32px;
+    line-height: 70px;
+    margin: 0 auto;
+
+
+}
+
+.service_col .icon::after{
+    content: "";
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    transition: all linear .3s;
+}
+
+
+.service_col .icon::before{
+    content: "";
+    height: 74px;
+    width: 74px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+}
+#service .service_row .service_col:nth-child(3) {
+    margin-right: 0;
+}
+.service_col:hover{
+    box-shadow: #00000059 0px 5px 10px 2px;
+}
+.service_col:hover .icon{
+    background-color: #5bc5f4;
+}
+.service_col:hover .icon::after{
+    border-color: #5bc5f4;
+}
+/* ========================================================
+Our service part End
+========================================================  */
+
+
+/*========================================================
+PORTFOLIO part Start
+======================================================== */
+
+#portfolio{
+    padding-bottom: 60px;
+}
+.port_row{
+    margin-top: 30px;
+}
+.port_row .port_col{
+    width: 225px;
+}
+.port_row .port_col .item{
+    position: relative;
+}
+
+.port_row .port_col .item .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+.port_row .port_col .item:hover .overlay{
+    transform: scale(1);
+}
+
+.port_row .port_col .item .overlay a{
+    width: 40px;
+    height: 40px;
+    background-color: #5bc5f4;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.port_row .port_col .item:first-child{
+    margin-bottom: 20px;
+
+}
+.port_row .port_col{
+    float: left;
+    margin-right: 20px;
+}
+
+.port_row .port_col:nth-child(4){
+    margin-right: 0;
+}
+
+
+/* ========================================================
+PORTFOLIO part End
+========================================================  */
+
+
+
+
+/*========================================================
+OUR TEAM part Start
+======================================================== */
+#our_team{
+    padding-bottom: 60px;
+}
+
+#our_team .team_row{
+    display: flex;
+    margin-top: 30px;
+}
+.team_row .team_col{
+    width: 23.439%;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.team_row .team_col:first-child{
+    margin-left: 0;
+}
+.team_col .team_image{
+    position: relative;
+    overflow: hidden;
+}
+
+.team_image .overlay {
+        width: 82px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.60);
+        position: absolute;
+        top: 0;
+        right: -82px;
+        transition: all linear .3s;
+}
+
+.team_col:hover .team_image .overlay{
+    right: 0;
+}
+.team_image .overlay ul{
+    margin-top: 33px;
+}
+.team_image .overlay ul li {
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.team_image .overlay ul li a{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    line-height: 40px;
+    transition: all linear .3s;
+}
+.team_col h3{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+.team_col p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.team_image .overlay ul li a:hover{
+    background-color: #5bc5f4;
+    border-color: #5bc5f4;;
+}
+.team_col:hover h3{
+    color: #5bc5f4;
+}
+
+.team_col:hover .team_image{
+    box-shadow: #00000059 0px 5px 10px 2px;
+}
+/* ========================================================
+OUR TEAM part End
+========================================================  */
+
+/* <!-- ========================================================
+Testimonial part Start
+======================================================== --> */
+
+#testimonial{
+    padding-bottom: 60px;
+}
+.test_row{
+    margin-top: 30px;
+    display: flex;
+}
+
+.test_row .test_col:last-child{
+    margin-right: 0;
+}
+.test_row .test_col{
+    width: 50%;
+    text-align: center;
+    margin-right: 30px;
+    
+}
+
+.test_row .test_col .test_image{
+    width: 80px;
+    margin: 0 auto 35px;
+}
+.test_row .test_col .test_text{
+   padding: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.test_col .test_text h3{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    line-height: 24px;
+}
+.test_col .test_text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #555555;
+    line-height: 24px;
+}
+.test_row .test_col .test_text p span{
+   display: block;
+   margin-top: 15px;
+
+}
+
+.test_row .test_col .test_text::after{
+content: "";
+width: 32px;
+height: 32px;
+background-color: #f1f1f1;
+position: absolute;
+top: -16px;
+left: 50%;
+transform: translateX(-50%) rotate(45deg);
+z-index: -1;
+}
+
+
+.test_row .test_col .test_text ul{
+    display: flex;
+    justify-content: center;
+    color: #5bc5f4;
+    margin: 7px 0;
+}
+
+
+/* <!-- ========================================================
+Testimonial part End
+======================================================== --> */
+
+/* <!-- ========================================================
+Footer part Start
+======================================================== --> */
+
+#footer{
+    padding: 20px 0;
+    background-color: #353535;
+}
+.footer_row{
+    display: flex;
+}
+.footer_col{
+    width: 190px;
+    margin-right: 7px;
+}
+.footer_col .footer_logo{
+    width: 80px;
+}
+
+.footer_col p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    line-height: 24px;
+    color: #f1f1f1;
+    margin-top: 28px;
+
+}
+.footer_col p span{
+    display: block;
+    margin-top: 35px;
+}
+.contact_col{
+    margin-right: 24px;
+}
+.contact_col h2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+    margin: 12px 0 34px;
+}
+
+.contact_item{
+    width: 235px;
+    display: flex;
+    margin-top: 25px;
+}
+
+.contact_item .icon{
+    width: 35px;
+    height: 35px;
+    background-color: #5bc5f4;
+    border-radius: 50%;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+}
+
+.contact_col ul li a{
+    color: #f1f1f1;
+}
+.menu_col{
+    margin-right: 17px;
+}
+.menu_col h2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+    margin: 10px 0 33px;
+}
+.footer_menu{
+    display: flex;
+}
+
+.footer_menu ul li a{
+    font-size: 13px;
+    font-weight: 400;
+     font-family: 'Open Sans', sans-serif;
+    color: #f1f1f1;
+    margin: 0 30px 15px 0;
+    transition: all linear .3s;
+}
+
+.footer_menu ul li a:hover{
+    color: #5bc5f4;
+}
+
+#footer .image_row {
+    display: flex;
+}
+.photo_col h2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: #f1f1f1;
+    margin: 10px 0 10px;
+}
+.photo_col .image_row .image_col .image{
+    width: 91px;
+    height: 90px;
+    margin-top: 14px;
+}
+.photo_col .image_row .image_col{
+    margin-left: 13px;
+}
+.photo_col .image_row .image_col:first-child{
+    margin-left: 0;
+}
+/* <!-- ========================================================
+Footer part End
+======================================================== --> */
+
+/* <!-- ========================================================
+Footer Last part Start
+======================================================== --> */
+#last_part{
+    height: 43px;
+    width: 100%;
+    background-color: #555555;
+}
+#last_part .last_text{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+#last_part .last_text ul li a{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #f1f1f1;
+    line-height: 43px;
+    margin-left: 3px;
+    transition: all linear .3s;
+
+}
+
+#last_part .last_text ul li a:hover{
+    color: #5bc5f4;
+}
+
+#last_part .last_text .last_text1 p{
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 43px;
+   font-family: 'Open Sans', sans-serif;
+   color: #f1f1f1;
+    
+}
+/* <!-- ========================================================
+Footer Last part End
+======================================================== --> */
+Copyright  2017. All rights reserved by
